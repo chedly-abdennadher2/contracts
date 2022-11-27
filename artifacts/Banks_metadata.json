@@ -1,0 +1,159 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "id_",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "BankActivated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "id_",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "email",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ifscCode",
+						"type": "string"
+					}
+				],
+				"name": "BankAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "id_",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "BankDeactivated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "id_",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "email",
+						"type": "string"
+					}
+				],
+				"name": "BankUpdated",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"author": "Suresh Konakanchi",
+			"details": "Library for managing all finanicial institutions thata were involved in the KYC process",
+			"kind": "dev",
+			"methods": {},
+			"title": "Banks",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Banks.sol": "Banks"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Banks.sol": {
+			"keccak256": "0xecc5d33a97642f8ba82a0391717c5845232d3abce31f29685ec53bfbc23b3d46",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3fa5c43cb58c03e0710b77ea4ecc3fbf86c38ca347e7b50e562e727dc08cc582",
+				"dweb:/ipfs/QmRjuR4riGhckQZzbffnuMAwJM2KkWtYq7tCuCtf89Gb9x"
+			]
+		},
+		"contracts/Helpers.sol": {
+			"keccak256": "0x2e1e714c855ea86e940eee15124367d5008bc4a7c5cb01f8064acfab8f29de2b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://129806f4dd0ca330079ca646ad4fd90e7bc64f3ca43c2a5089ce3c3e8af8f87b",
+				"dweb:/ipfs/QmfPgV3RGsKYTJgSvti6KVadWbDWzXW2EN1ccUfshJZ6Zy"
+			]
+		},
+		"contracts/Types.sol": {
+			"keccak256": "0x5344ee24072b7fc8a068841310000ece1beca5f800c1e42349f9e5fcb179e636",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5a55d40c56f908c7039658f8c3b7157aaccf16db233023f13dea69b6c682db9c",
+				"dweb:/ipfs/QmVWG1EiAb1QWFGrgDuUiXqSLPG29dJRnTk2wMVp8G6bMX"
+			]
+		}
+	},
+	"version": 1
+}

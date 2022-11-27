@@ -1,0 +1,445 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "id_",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "email",
+						"type": "string"
+					}
+				],
+				"name": "CustomerAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "id_",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "email",
+						"type": "string"
+					}
+				],
+				"name": "CustomerDataUpdated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "id_",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "customerName",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "dataHash",
+						"type": "string"
+					}
+				],
+				"name": "DataHashUpdated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "mobileNumber",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "id_",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "kycVerifiedBy",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "dataHash",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dataUpdatedOn",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Types.Customer",
+						"name": "customer_",
+						"type": "tuple"
+					}
+				],
+				"name": "addcustomer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "id_",
+						"type": "address"
+					}
+				],
+				"name": "customerExists",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "exists_",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "id_",
+						"type": "address"
+					}
+				],
+				"name": "getcustomerdetails",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "mobileNumber",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "id_",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "kycVerifiedBy",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "dataHash",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dataUpdatedOn",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Types.Customer",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "id_",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "customers_",
+						"type": "address[]"
+					}
+				],
+				"name": "searchcustomers",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "mobileNumber",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "id_",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "kycVerifiedBy",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "dataHash",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dataUpdatedOn",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Types.Customer",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "hash_",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentTime_",
+						"type": "uint256"
+					}
+				],
+				"name": "updatedatahash",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "id_",
+						"type": "address"
+					}
+				],
+				"name": "updatekycdoneby",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name_",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "email_",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mobile_",
+						"type": "uint256"
+					}
+				],
+				"name": "updateprofile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Suresh Konakanchi",
+			"details": "Library for managing all customers, who are involved in the KYC process",
+			"kind": "dev",
+			"methods": {
+				"addcustomer((string,string,uint256,address,address,string,uint256))": {
+					"details": "Add new customer",
+					"params": {
+						"customer_": "Customer object"
+					}
+				},
+				"customerExists(address)": {
+					"params": {
+						"id_": "Metamask address of the customer"
+					},
+					"returns": {
+						"exists_": "boolean value to say if customer exists or not"
+					}
+				},
+				"getcustomerdetails(address)": {
+					"details": "To get details of the customer",
+					"params": {
+						"id_": "Customer's metamask address"
+					},
+					"returns": {
+						"_0": "Customer object which will have complete details of the customer"
+					}
+				},
+				"searchcustomers(address,address[])": {
+					"details": "Search for customer details in the list that the bank is directly linked to",
+					"params": {
+						"customers_": "Customer metamask Id's",
+						"id_": "Customer's metamask Id"
+					},
+					"returns": {
+						"_0": "boolean to say if customer exists or not",
+						"_1": "Customer object to get the complete details of the customer Costly operation if we had more customers linked to this single bank"
+					}
+				},
+				"updatedatahash(string,uint256)": {
+					"details": "Updates the Datahash of the documents",
+					"params": {
+						"currentTime_": "Current Date Time in unix epoch timestamp",
+						"hash_": "Data hash value that need to be updated"
+					}
+				},
+				"updatekycdoneby(address)": {
+					"details": "To Update KYC verification bank",
+					"params": {
+						"id_": "Customer's metamask ID"
+					}
+				},
+				"updateprofile(string,string,uint256)": {
+					"details": "Updates the user profile",
+					"params": {
+						"email_": "Email that need to be updated",
+						"mobile_": "Mobile number that need to be updated",
+						"name_": "Customer name"
+					}
+				}
+			},
+			"title": "Customers",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"customerExists(address)": {
+					"notice": "Checks whether customer already exists"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Customers.sol": "Customers"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Customers.sol": {
+			"keccak256": "0x6f53b0a6ac612ce615b2a716fbad1d9bf8bf20686387a06eb9524e90bac1ab26",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://99fcc50b5b30e028b67cd89385fe821fc618959c869a69bb130bebceb8839387",
+				"dweb:/ipfs/QmTvxtECX2GCDAQKquDCwGqbLTQzFGB8x77smt8112kjvV"
+			]
+		},
+		"contracts/Helpers.sol": {
+			"keccak256": "0x2e1e714c855ea86e940eee15124367d5008bc4a7c5cb01f8064acfab8f29de2b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://129806f4dd0ca330079ca646ad4fd90e7bc64f3ca43c2a5089ce3c3e8af8f87b",
+				"dweb:/ipfs/QmfPgV3RGsKYTJgSvti6KVadWbDWzXW2EN1ccUfshJZ6Zy"
+			]
+		},
+		"contracts/Types.sol": {
+			"keccak256": "0x5344ee24072b7fc8a068841310000ece1beca5f800c1e42349f9e5fcb179e636",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5a55d40c56f908c7039658f8c3b7157aaccf16db233023f13dea69b6c682db9c",
+				"dweb:/ipfs/QmVWG1EiAb1QWFGrgDuUiXqSLPG29dJRnTk2wMVp8G6bMX"
+			]
+		}
+	},
+	"version": 1
+}
